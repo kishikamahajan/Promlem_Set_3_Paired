@@ -22,6 +22,7 @@ include-before-body:
 ```{python}
 import pandas as pd
 import numpy as np
+import altair as alt
 
 np.random.seed(42)
 data = pd.DataFrame(np.random.rand(100), columns=['Random Numbers'])
@@ -29,7 +30,15 @@ data = pd.DataFrame(np.random.rand(100), columns=['Random Numbers'])
 def preview_data(df):
     head = df.head()
     describe = df.describe()
-    return [head,describe]
+    plot = alt.Chart(df).mark_bar().encode(
+        x = alt.X(df.columns[0], bin = True, title = "Random Numbers"),
+        y=alt.Y("count()", title = "Frequency")
+    ).properties(
+        title = "Histogram of Random Numbers",
+        width = 400,
+        height = 300
+    )
+    return [head, describe, plot]
 
 preview_data(data)
 ```
