@@ -1,7 +1,5 @@
 ---
 title: "30538 Problem Set 3: git pair"
-merge_conflict_nidhi_2
-
 author: "Kishika Mahajan and Nidhi Srivastava"
 main
 format: 
