@@ -1,6 +1,9 @@
 ---
 title: "30538 Problem Set 3: git pair"
-author: "Kishika Mahajan"
+merge_conflict_nidhi_2
+
+author: "Kishika Mahajan and Nidhi Srivastava"
+main
 format: 
   pdf:
     keep-tex: true
@@ -30,3 +33,4 @@ def preview_data(df):
 
 preview_data(data)
 ```
+
