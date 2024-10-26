@@ -1,6 +1,7 @@
 ---
 title: "30538 Problem Set 3: git pair"
-author: "Dema Therese"
+author: "Kishika Mahajan and Nidhi Srivastava"
+main
 format: 
   pdf:
     keep-tex: true
